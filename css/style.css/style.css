@@ -394,48 +394,34 @@ body {
   text-align: center;
 }
 
-.Hire select {
-  margin-bottom: 20px;
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #111;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.Hire input {
-  margin-bottom: 20px;
-}
-
-.Hire input[type="text"] {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #111;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.Hire input[type="number"] {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #111;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
 .Hire h1 {
   color: var(--primary);
   font-size: 24px;
   margin: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.Hire button {
+.Hire p {
+  font-size: 14px;
+  color: #000;
+}
+
+.Hire .iniTombol {
+  display: inline-block;
+  justify-content: center;
   width: 20%;
-  padding: 10px;
-  border: 1px solid var(--primary);
-  border-radius: 5px;
   margin: 10px;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0a3242;
+  border-radius: 5px;
+}
+
+.Hire .iniTombol:hover {
+  background-color: #999;
+  color: #000;
 }
 
 /* page digiproduct */
@@ -459,12 +445,14 @@ body {
 }
 
 .product-icons a {
-  height: 30px;
-  width: 30px;
+  /* height: 30px;
+  width: 30px; */
+  gap: 6px;
+  padding: 5px;
   margin-bottom: 5px;
   color: #000;
   border: 1px solid var(--primary);
-  border-radius: 50%;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +519,7 @@ footer .Links a:hover {
 footer .Links {
   display: flex;
   font-size: 16px;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -598,13 +586,20 @@ footer .Credit {
   }
 
   .About .profile .profile-img {
+    justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
     flex-wrap: wrap;
   }
 
   .About .profile .description {
+    justify-content: center;
+    margin: 0;
     padding: 10px;
+  }
+
+  .Hire .iniTombol {
+    display: inline-flex;
   }
 }
 

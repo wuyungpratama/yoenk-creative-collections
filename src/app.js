@@ -20,7 +20,7 @@ document.addEventListener("alpine:init", () => {
         name: "Bussiness Card",
         img: "Card Template 1.svg",
         price: 20000,
-        description: "Kartu Nama minimalis dan feminim",
+        description: "Kartu Nama minimalis dan feminim (Canva Template)",
       },
       { id: 4, name: "E-Book", img: "E-book.svg", price: 20000 },
       { id: 5, name: "E-Book", img: "E-book.svg", price: 20000 },
@@ -85,8 +85,6 @@ document.addEventListener("alpine:init", () => {
     },
   });
 });
-
-// fungsi pencarian
 
 // form validation
 const checkoutButton = document.querySelector(".checkout-button");
