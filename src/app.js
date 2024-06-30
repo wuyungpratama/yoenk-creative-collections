@@ -17,12 +17,18 @@ document.addEventListener("alpine:init", () => {
       },
       {
         id: 3,
-        name: "Bussiness Card",
+        name: "Kartu Nama Minimalis",
         img: "Card Template 1.svg",
-        price: 20000,
+        price: 15000,
         description: "Kartu Nama minimalis dan feminim (Canva Template)",
       },
-      { id: 4, name: "E-Book", img: "E-book.svg", price: 20000 },
+      {
+        id: 4,
+        name: "CV Template Minimalis",
+        img: "CV Template.svg",
+        price: 25000,
+        description: "Template untuk Resume/CV creative dalam bentuk SVG & EPS",
+      },
       { id: 5, name: "E-Book", img: "E-book.svg", price: 20000 },
     ],
   }));
@@ -124,7 +130,7 @@ const formatMessage = (obj) => {
 
 Data Pesanan
 ${JSON.parse(obj.items).map(
-  (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`
+  (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`,
 )}
 TOTAL: ${rupiah(obj.total)}
 Terima Kasih.`;
