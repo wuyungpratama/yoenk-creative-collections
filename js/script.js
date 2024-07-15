@@ -6,14 +6,14 @@ document.querySelector("#hamburger-menu").onclick = () => {
 };
 
 // Toggle class active search
-const searchForm = document.querySelector(".search-form");
-const searchBox = document.querySelector("#search-box");
-
-document.querySelector("#search-button").onclick = (e) => {
-  searchForm.classList.toggle("active");
-  searchBox.focus();
-  e.preventDefault();
-};
+// const searchForm = document.querySelector(".search-form");
+// const searchBox = document.querySelector("#search-box");
+//
+// document.querySelector("#search-button").onclick = (e) => {
+//   searchForm.classList.toggle("active");
+//   searchBox.focus();
+//   e.preventDefault();
+// };
 
 // Toggle class active shopping bag
 const shoppingCart = document.querySelector(".shopping-cart");
@@ -25,16 +25,16 @@ document.querySelector("#shopping-bag-button").onclick = (e) => {
 
 // klik di luar element
 const hamburger = document.querySelector("#hamburger-menu");
-const searchbutton = document.querySelector("#search-button");
+// const searchbutton = document.querySelector("#search-button");
 const shoppingbag = document.querySelector("#shopping-bag-button");
 
 document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target) && !NavbarNav.contains(e.target)) {
     NavbarNav.classList.remove("active");
   }
-  if (!searchbutton.contains(e.target) && !searchForm.contains(e.target)) {
-    searchForm.classList.remove("active");
-  }
+  // if (!searchbutton.contains(e.target) && !searchForm.contains(e.target)) {
+  //   searchForm.classList.remove("active");
+  // }
   if (!shoppingbag.contains(e.target) && !shoppingCart.contains(e.target)) {
     shoppingCart.classList.remove("active");
   }
