@@ -4,14 +4,14 @@ document.addEventListener("alpine:init", () => {
       {
         id: 1,
         name: "HKA Font",
-        img: "HKA Font.svg",
+        img: "HKA Font.png",
         price: 15000,
         description: "Custom font handwriting, hanya ada Regular font",
       },
       {
         id: 2,
         name: "WPW Font",
-        img: "WPW Font.svg",
+        img: "WPW Font.png",
         price: 15000,
         description: "Custom font handwriting, hanya ada Regular font",
       },
@@ -53,7 +53,7 @@ document.addEventListener("alpine:init", () => {
       {
         id: 3,
         name: "Label Nama",
-        img: "Label Nama.svg",
+        img: "Label Nama.png",
         price: 25000,
         description:
           "Label nama lucu yang cocok untuk label buku anak - anak (PDF)",
