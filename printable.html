@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Produk</title>
+    <title>Printable</title>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,10 +60,10 @@
       </div>
 
       <!-- search form start -->
-      <div class="search-form">
+      <!--<div class="search-form">
         <input type="search" id="search-box" placeholder="Cari disini..." />
         <label for="search-box"><i class="fas fa-search"></i></label>
-      </div>
+      </div>-->
       <!-- search form end -->
 
       <!-- shoping bag start -->
@@ -133,9 +133,9 @@
 
     <div class="container">
       <!-- Menu Start -->
-      <section class="products" id="products" x-data="products">
+      <section class="produk" id="produk" x-data="produk">
         <div class="row">
-          <template x-for="(item, index) in items" x-keys="index">
+          <template x-for="(item, index) in barang" x-keys="index">
             <div class="product-card">
               <div class="product-icons">
                 <a href="#" @click.prevent="$store.cart.add(item)"
@@ -180,7 +180,7 @@
     <div class="Links">
       <a href="index.html">Home</a>
       <a href="digiproduct.html">Digital Produk</a>
-      <a href="printable.html">Printable</a>
+      <a href="#print">Printable</a>
       <a href="index.html">Hire Wuyung</a>
     </div>
     <div class="Credit">

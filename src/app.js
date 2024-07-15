@@ -17,19 +17,47 @@ document.addEventListener("alpine:init", () => {
       },
       {
         id: 3,
-        name: "Kartu Nama Minimalis",
+        name: "Bussiness Card",
         img: "Card Template 1.svg",
-        price: 15000,
+        price: 20000,
         description: "Kartu Nama minimalis dan feminim (Canva Template)",
       },
       {
         id: 4,
-        name: "CV Template Minimalis",
+        name: "Template CV Minimalis",
         img: "CV Template.svg",
         price: 25000,
-        description: "Template untuk Resume/CV creative dalam bentuk SVG & EPS",
+        description: "Template CV minimalis dengan format EPS dan SVG",
       },
-      { id: 5, name: "E-Book", img: "E-book.svg", price: 20000 },
+    ],
+  }));
+
+  Alpine.data("produk", () => ({
+    barang: [
+      {
+        id: 1,
+        name: "Mewarnai Jadi Asik",
+        img: "Mewarnai.svg",
+        price: 10000,
+        description:
+          "Buku mewarnai karakter hewan khusus untuk anak Batita sampai Balita (PDF)",
+      },
+      {
+        id: 2,
+        name: "Wall Art Quotes",
+        img: "wallart.svg",
+        price: 15000,
+        description:
+          "Quotes random yang bisa bikin kamu semangat, berisikan 6 quotes dalam bentuk PDF",
+      },
+      {
+        id: 3,
+        name: "Label Nama",
+        img: "Label Nama.svg",
+        price: 25000,
+        description:
+          "Label nama lucu yang cocok untuk label buku anak - anak (PDF)",
+      },
     ],
   }));
 

@@ -645,6 +645,14 @@ footer .Credit {
     margin: 0 auto;
   }
 
+  .product-icons a {
+    font-size: 12px
+  }
+
+  .product-desc {
+    font-size: 13px;
+  }
+
   footer .Links {
     display: grid;
     font-size: 16px;
