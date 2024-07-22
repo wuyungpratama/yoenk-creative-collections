@@ -61,7 +61,7 @@ document.addEventListener("alpine:init", () => {
       {
         id: 4,
         name: "Preschool Worksheet",
-        img: "worksheet 1.svg",
+        img: "worksheet1.svg",
         price: 20000,
         description:
           "Worksheet menarik yang membantu anak anda belajar menghitung dan menulis (PDF)",
