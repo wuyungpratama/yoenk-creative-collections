@@ -58,6 +58,14 @@ document.addEventListener("alpine:init", () => {
         description:
           "Label nama lucu yang cocok untuk label buku anak - anak (PDF)",
       },
+      {
+        id: 4,
+        name: "Preschool Worksheet",
+        img: "worksheet 1.svg",
+        price: 20000,
+        description:
+          "Worksheet menarik yang membantu anak anda belajar menghitung dan menulis (PDF)",
+      },
     ],
   }));
 
