@@ -66,6 +66,14 @@ document.addEventListener("alpine:init", () => {
         description:
           "Worksheet menarik yang membantu anak anda belajar menghitung dan menulis (PDF)",
       },
+      {
+        id: 5,
+        name: "Mewarnai Huruf",
+        img: "Mewarnai Huruf.png",
+        price: "10000",
+        description:
+          "Lembar kerja untuk buah hati yang baru mulai untuk belajar mewarnai dan membaca (PDF)",
+      },
     ],
   }));
 
