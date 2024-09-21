@@ -490,6 +490,66 @@ right: -10px;
   justify-content: center;
 }
 
+/* page website */
+
+.web-card {
+  text-align: center;
+  border: 1px solid #0a3242;
+  padding: 10px;
+}
+
+.web-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.web-icons a {
+  /* height: 30px;
+   *  width: 30px; */
+  gap: 6px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #000;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-icons a:hover {
+  color: #ffffff;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.web-image {
+  padding: 10px 0;
+}
+
+.web-image img {
+  height: 100%;
+}
+
+.web-content h1 {
+  font-size: 22px;
+  color: var(--primary);
+  justify-content: center;
+}
+
+.web-desc p {
+  color: #111;
+  font-weight: 500;
+}
+
+.web-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  justify-content: center;
+}
+
 /* Footer */
 footer {
   margin-top: 60px;
@@ -650,6 +710,14 @@ footer .Credit {
   }
 
   .product-desc {
+    font-size: 13px;
+  }
+
+  .web-icons a {
+    font-size: 12px
+  }
+
+  .web-desc {
     font-size: 13px;
   }
 
