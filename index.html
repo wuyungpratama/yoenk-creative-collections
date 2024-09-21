@@ -1,204 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoenk Creative Collection</title>
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoenk Creative Collection</title>
 
-    <!-- Feather Icon -->
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="fontawesome/css/all.css" />
+  <!-- Feather Icon -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-    <!-- My Style -->
-    <link rel="stylesheet" href="css\style.css/style.css" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="fontawesome/css/all.css" />
 
-    <!-- alpineJS -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+  <!-- My Style -->
+  <link rel="stylesheet" href="css\style.css/style.css" />
 
-    <!-- app -->
-    <!-- <script src="src/app.js"></script> -->
-  </head>
+  <!-- alpineJS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-  <body>
-    <!-- Navbar Start -->
-    <nav class="Navbar">
-      <a href="#home" class="Navbar-logo">Yoenk<span>Creative</span>.</a>
+  <!-- app -->
+  <!-- <script src="src/app.js"></script> -->
+</head>
 
-      <div class="Navbar-nav">
-        <a href="#home">Home</a>
-        <a href="digiproduct.html">Digital Produk</a>
-        <a href="printable.html">Printable</a>
-        <a href="#hire">Hire Wuyung</a>
-      </div>
+<body>
+  <!-- Navbar Start -->
+  <nav class="Navbar">
+    <a href="#home" class="Navbar-logo">Yoenk<span>Creative</span>.</a>
 
-      <div class="Navbar-extra">
-        <!--<a href="#" id="search-button"><i class="fas fa-search fa-2x"></i></a>-->
-        <a href="#" id="shopping-bag-button"
-          ><i class="fas fa-cart-shopping fa-2x"></i
-        ></a>
-        <a href="#" id="hamburger-menu"><i class="fas fa-bars fa-2x"></i></a>
-      </div>
-
-      <!-- search form start -->
-      <!--<div class="search-form">
-        <input type="search" id="search-box" placeholder="Cari disini..." />
-        <label for="search-box"><i class="fas fa-search"></i></label>
-      </div>-->
-      <!-- search form end -->
-
-      <!-- shopping cart start -->
-      <div class="shopping-cart">
-        <template x-for="(item, index) in $store.cart.items" x-keys="index">
-          <div class="cart-item">
-            <img :src="`img/DigiProduk/${item.img}`" :alt="item.name" />
-            <div class="item-detail">
-              <h3 x-text="item.name"></h3>
-              <div class="item-price">
-                <span x-text="rupiah(item.price)"></span> &times;
-                <button id="remove" @click="$store.cart.remove(item.id)">
-                  &minus;
-                </button>
-                <span x-text="item.quantity"></span>
-                <button id="add" @click.prevent="$store.cart.add(item)">
-                  &plus;
-                </button>
-                &equals;
-                <span x-text="rupiah(item.total)"></span>
-              </div>
-            </div>
-          </div>
-        </template>
-        <h4 x-show="!$store.cart.items.length">Bag is Empty</h4>
-      </div>
-      <!-- shopping cart end -->
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero Section Start -->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Digital Creative Collection</h1>
-        <p>
-          Menyediakan segala jenis Desain Grafis, Web Desain, Foto, Font dan juga Edit Video dalam
-          bentuk digital untuk keperluan sosial media, presentasi, maupun cetak.
-        </p>
-        <a href="printable.html" class="cta">Beli Sekarang</a>
-      </main>
-    </section>
-    <!-- Hero Section End -->
-
-    <div class="container">
-      <!-- About YC Section Start -->
-      <section class="About">
-        <h2>Jual Produk Apa Aja Sih?</h2>
-        <div class="product">
-          <div class="item">
-            <div class="content1">
-              <a href="digiproduct.html" id="editable"><i class="fas fa-pen-nib fa-2x"></i></a>
-              <h3>Digital Produk</h3>
-              <p>Produk yang bisa kamu edit lagi dan lagi</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="content2">
-              <a href="printable.html" id="printable"
-                ><i class="fas fa-print fa-2x"></i
-              ></a>
-              <h4>Printable</h4>
-              <p>Produk yang bisa langsung kamu cetak</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="content2">
-              <a href="https://wa.me/6281334227530?text=Halo%20saya%20mau%20order"
-                ><i class="fas fa-bezier-curve fa-2x"></i
-              ></a>
-              <h4>Custom Desain & Video</h4>
-              <p>Produk yang sesuai kebutuhanmu</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="profile">
-          <div class="profile-img">
-            <img src="img/PP.png" alt="Profile" />
-          </div>
-          <div class="description">
-            <h5>Hai...</h5>
-            <p>
-              Saya Wuyung Pratama seorang Grafis Designer dan Video Editor yang
-              sudah berkecimpung di dunia kreatif sejak 2016. Dengan web ini,
-              saya dapat membantu mengembangkan ide - ide anda.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- About YC Section End -->
-
-      <!-- Hire Wuyung Start -->
-      <section class="section-hire" id="hire">
-        <div class="Hire">
-          <h1>Hire Wuyung</h1>
-          <p>
-            Saya juga membuka jasa desain dan edit video (Reels/Tiktok,
-            Youtube), silahkan klik tombol hire dibawah ini untuk order.
-          </p>
-
-          <a
-            class="iniTombol"
-            href="https://wa.me/6281334227530?text=Halo%20saya%20mau%20order"
-            >HIRE</a
-          >
-        </div>
-      </section>
-      <!-- Hire Wuyung End -->
-    </div>
-  </body>
-  <!-- Footer Start -->
-  <footer>
-    <div class="Sosials">
-      <a
-        href="https://www.linkedin.com/in/wuyung-pratama-waryanto-a61b082a8/"
-        target="_blank"
-        ><i data-feather="linkedin"></i
-      ></a>
-      <a href="https://www.instagram.com/wuyungw" target="_blank"
-        ><i data-feather="instagram"></i
-      ></a>
-      <a href="https://wa.me/6281334227530" target="_blank"
-        ><i data-feather="message-square"></i
-      ></a>
-    </div>
-    <div class="Links">
+    <div class="Navbar-nav">
       <a href="#home">Home</a>
       <a href="digiproduct.html">Digital Produk</a>
       <a href="printable.html">Printable</a>
+      <a href="website.html">Website</a>
       <a href="#hire">Hire Wuyung</a>
     </div>
-    <div class="Credit">
-      <p>Credit by YoenkCreative | &copy;2024</p>
+
+    <div class="Navbar-extra">
+      <!--<a href="#" id="search-button"><i class="fas fa-search fa-2x"></i></a>-->
+      <a href="#" id="shopping-bag-button"><i class="fas fa-cart-shopping fa-2x"></i></a>
+      <a href="#" id="hamburger-menu"><i class="fas fa-bars fa-2x"></i></a>
     </div>
-  </footer>
-  <!-- Footer End -->
 
-  <!-- Feather Icon -->
-  <script>
-    feather.replace();
-  </script>
+    <!-- search form start -->
+    <!--<div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari disini..." />
+        <label for="search-box"><i class="fas fa-search"></i></label>
+      </div>-->
+    <!-- search form end -->
 
-  <!-- My Javascript -->
-  <script src="js/script.js"></script>
+    <!-- shopping cart start -->
+    <div class="shopping-cart">
+      <template x-for="(item, index) in $store.cart.items" x-keys="index">
+        <div class="cart-item">
+          <img :src="`img/DigiProduk/${item.img}`" :alt="item.name" />
+          <div class="item-detail">
+            <h3 x-text="item.name"></h3>
+            <div class="item-price">
+              <span x-text="rupiah(item.price)"></span> &times;
+              <button id="remove" @click="$store.cart.remove(item.id)">
+                &minus;
+              </button>
+              <span x-text="item.quantity"></span>
+              <button id="add" @click.prevent="$store.cart.add(item)">
+                &plus;
+              </button>
+              &equals;
+              <span x-text="rupiah(item.total)"></span>
+            </div>
+          </div>
+        </div>
+      </template>
+      <h4 x-show="!$store.cart.items.length">Bag is Empty</h4>
+    </div>
+    <!-- shopping cart end -->
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Hero Section Start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Digital Creative Collection</h1>
+      <p>
+        Menyediakan segala jenis Desain Grafis, Web Desain, Foto, Font dan juga Edit Video dalam
+        bentuk digital untuk keperluan sosial media, presentasi, maupun cetak.
+      </p>
+      <a href="printable.html" class="cta">Beli Sekarang</a>
+    </main>
+  </section>
+  <!-- Hero Section End -->
+
+  <div class="container">
+    <!-- About YC Section Start -->
+    <section class="About">
+      <h2>Jual Produk Apa Aja Sih?</h2>
+      <div class="product">
+        <div class="item">
+          <div class="content1">
+            <a href="digiproduct.html" id="editable"><i class="fas fa-pen-nib fa-2x"></i></a>
+            <h3>Digital Produk</h3>
+            <p>Produk yang bisa kamu edit lagi dan lagi</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content2">
+            <a href="printable.html" id="printable"><i class="fas fa-print fa-2x"></i></a>
+            <h4>Printable</h4>
+            <p>Produk yang bisa langsung kamu cetak</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content2">
+            <a href="website.html"><i class="fas fa-globe fa-2x"></i></a>
+            <h4>Web Design</h4>
+            <p>Desain Website yang menarik sesuai kebutuhanmu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="profile-img">
+          <img src="img/PP.png" alt="Profile" />
+        </div>
+        <div class="description">
+          <h5>Hai...</h5>
+          <p>
+            Saya Wuyung Pratama seorang Grafis Designer dan Video Editor yang
+            sudah berkecimpung di dunia kreatif sejak 2016. Dengan web ini,
+            saya dapat membantu mengembangkan ide - ide anda.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About YC Section End -->
+
+    <!-- Hire Wuyung Start -->
+    <section class="section-hire" id="hire">
+      <div class="Hire">
+        <h1>Hire Wuyung</h1>
+        <p>
+          Saya juga membuka jasa desain dan edit video (Reels/Tiktok,
+          Youtube), silahkan klik tombol hire dibawah ini untuk order.
+        </p>
+
+        <a class="iniTombol" href="https://wa.me/6281334227530?text=Halo%20saya%20mau%20order">HIRE</a>
+      </div>
+    </section>
+    <!-- Hire Wuyung End -->
+  </div>
+</body>
+<!-- Footer Start -->
+<footer>
+  <div class="Sosials">
+    <a href="https://www.linkedin.com/in/wuyung-pratama-waryanto-a61b082a8/" target="_blank"><i
+        data-feather="linkedin"></i></a>
+    <a href="https://www.instagram.com/wuyungw" target="_blank"><i data-feather="instagram"></i></a>
+    <a href="https://wa.me/6281334227530" target="_blank"><i data-feather="message-square"></i></a>
+  </div>
+  <div class="Links">
+    <a href="#home">Home</a>
+    <a href="digiproduct.html">Digital Produk</a>
+    <a href="printable.html">Printable</a>
+    <a href="website.html">Website</a>
+    <a href="#hire">Hire Wuyung</a>
+  </div>
+  <div class="Credit">
+    <p>Credit by YoenkCreative | &copy;2024</p>
+  </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Feather Icon -->
+<script>
+  feather.replace();
+</script>
+
+<!-- My Javascript -->
+<script src="js/script.js"></script>
+
 </html>
