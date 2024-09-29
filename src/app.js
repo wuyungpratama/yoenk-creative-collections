@@ -74,6 +74,13 @@ document.addEventListener("alpine:init", () => {
         description:
           "Lembar kerja untuk buah hati yang baru mulai untuk belajar mewarnai dan membaca (PDF)",
       },
+      {
+        id: 5,
+        name: "Preschool Worksheet 2",
+        img: "Worksheet 2.png",
+        price: "10000",
+        description: "Lembar kerja khusus untuk melatih motoriknya (PDF)",
+      },
     ],
   }));
 
@@ -174,7 +181,7 @@ const formatMessage = (obj) => {
 
 Data Pesanan
 ${JSON.parse(obj.items).map(
-  (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`,
+  (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`
 )}
 TOTAL: ${rupiah(obj.total)}
 Terima Kasih.`;
