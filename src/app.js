@@ -81,6 +81,14 @@ document.addEventListener("alpine:init", () => {
         price: "10000",
         description: "Lembar kerja khusus untuk melatih motoriknya (PDF)",
       },
+      {
+        id: 6,
+        name: "DIY Kalender 2025",
+        img: "kalender 2025.png",
+        price: "25000",
+        description:
+          "Kalender 2025 lengkap dengan libur nasional dan cuti bersama. Kalender ini tinggal kamu print dan bisa ditulis-tulis sesuka hati.",
+      },
     ],
   }));
 
