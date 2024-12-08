@@ -29,6 +29,14 @@ document.addEventListener("alpine:init", () => {
         price: 25000,
         description: "Template CV minimalis dengan format EPS dan SVG",
       },
+      {
+        id: 5,
+        name: "Invoice Auto Send Email as PDF",
+        img: "gsheet to pdf.png",
+        price: 49000,
+        description:
+          "Invoice Template google sheets yang bisa otomatis langsung kirim email bentuk PDF",
+      },
     ],
   }));
 
