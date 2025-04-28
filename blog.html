@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoenk Creative Blog</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Feather Icon -->
+    <script src="http://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="/css/style.css/style.css" />
+
+    <!-- alpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- app -->
+    <script src="/src/app.js" async></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="Navbar" x-data>
+        <a href="index.html" class="Navbar-logo">Yoenk<span>Creative</span>.</a>
+
+        <div class="Navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="digiproduct.html">Digital Produk</a>
+            <a href="printable.html">Printable</a>
+            <a href="website.html">Website</a>
+            <a href="index.html" id="hire">Hire Wuyung</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="Navbar-extra">
+            <!-- <a href="#" id="shopping-bag-button">
+                <i class="fas fa-cart-shopping fa-2x"></i>
+                <span class="quantity-notif" x-show="$store.cart.quantity" x-text="$store.cart.quantity"></span>
+            </a> -->
+            <a href="#" id="hamburger-menu"><i class="fas fa-bars fa-2x"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container">
+        <!-- Menu Start -->
+        <section class="blog" id="blog">
+            <div class="row">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/Blog/porto.png" alt="Portfolio" />
+                    </div>
+                    <div class="blog-icons">
+                        <a href="blog/pentingnya-website.html" target="_blank"> Read More
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <h1>Pentingnya Website Portfolio untuk Personal Branding</h1>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Bangun citra profesional lewat website portfolio pribadi. Tingkatkan personal branding & buka
+                            peluang baru di era digital.</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/Blog/gsheet thumb.png" alt="Google Sheets" />
+                    </div>
+                    <div class="blog-icons">
+                        <a href="blog/kelebihan-google-sheets.html" target="_blank"> Read More
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <h1>10 Kegunaan Google Sheets untuk Produktivitas dan Bisnis</h1>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Pelajari 10 kegunaan Google Sheets yang bisa meningkatkan efisiensi kerja, dari manajemen
+                            data hingga otomatisasi tugas. Solusi praktis untuk bisnis dan proyekmu!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu End -->
+    </div>
+</body>
+
+<!-- Footer Start -->
+<footer>
+    <div class="Sosials">
+        <a href="https://www.linkedin.com/in/wuyung-pratama-waryanto-a61b082a8/" target="_blank"><i
+                data-feather="linkedin"></i></a>
+        <a href="https://www.instagram.com/wuyungw" target="_blank"><i data-feather="instagram"></i></a>
+        <a href="https://wa.me/6281334227530" target="_blank"><i data-feather="message-square"></i></a>
+    </div>
+    <div class="Links">
+        <a href="index.html">Home</a>
+        <a href="digiproduct.html">Digital Produk</a>
+        <a href="printable.html">Printable</a>
+        <a href="website.html">Website</a>
+        <a href="index.html">Hire Wuyung</a>
+        <a href="blog.html">Blog</a>
+    </div>
+    <div class="Credit">
+        <p>Credit by YoenkCreative | &copy;2024</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Feather Icon -->
+<script>
+    feather.replace();
+</script>
+
+<!-- My Javascript -->
+<script src="/js/script.js"></script>
+
+</html>

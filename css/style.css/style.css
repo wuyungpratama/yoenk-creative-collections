@@ -87,7 +87,7 @@ body {
 }
 
 #hamburger-menu {
-display: none;
+  display: none;
 }
 
 /* navbar search form */
@@ -126,19 +126,19 @@ display: none;
 
 /* shopping cart */
 #shopping-bag-button {
-position: relative;
+  position: relative;
 }
 
 #shopping-bag-button .quantity-notif {
-display: inline-block;
-padding: 1px 5px;
-color: #ffffff;
-background-color: red;
-border-radius: 8px;
-font-size: 8px;
-position: absolute;
-top: 8px;
-right: -10px;
+  display: inline-block;
+  padding: 1px 5px;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 8px;
+  font-size: 8px;
+  position: absolute;
+  top: 8px;
+  right: -10px;
 }
 
 .shopping-cart {
@@ -492,19 +492,22 @@ right: -10px;
 
 /* page website */
 
-.web-card {
+.web-card,
+.blog-card {
   text-align: center;
   border: 1px solid #0a3242;
   padding: 10px;
 }
 
-.web-icons {
+.web-icons,
+.blog-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.web-icons a {
+.web-icons a,
+.blog-icons a {
   /* height: 30px;
    *  width: 30px; */
   gap: 6px;
@@ -518,27 +521,32 @@ right: -10px;
   align-items: center;
 }
 
-.web-icons a:hover {
+.web-icons a:hover,
+.blog-icons a:hover {
   color: #ffffff;
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
 
-.web-image {
+.web-image,
+.blog-image {
   padding: 10px 0;
 }
 
-.web-image img {
+.web-image img,
+.blog-image img {
   height: 100%;
 }
 
-.web-content h1 {
+.web-content h1,
+.blog-content h1 {
   font-size: 22px;
   color: var(--primary);
   justify-content: center;
 }
 
-.web-desc p {
+.web-desc p,
+.blog-desc p {
   color: #111;
   font-weight: 500;
 }
@@ -594,6 +602,186 @@ footer .Credit {
   margin-bottom: 15px;
 }
 
+/* blog per content */
+.blog-header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-header img {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transform: translate(20%, 0);
+  margin-top: 100px;
+}
+
+.blog-header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 20px;
+  color: var(--primary);
+}
+
+.blog-descript p,
+.kesimpulan p {
+  color: #111;
+  font-size: 16px;
+  text-align: justify;
+  margin: 20px 50px;
+}
+
+.kesimpulan p {
+  margin-top: 3px;
+}
+
+.blog-list p {
+  color: #111;
+  font-size: 16px;
+  text-align: justify;
+  margin: 3px 50px 20px 50px;
+}
+
+.blog-list li {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 70px;
+  margin-right: 0;
+}
+
+.kesimpulan h3 {
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 20px 50px 3px 50px;
+}
+
+.kesimpulan a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.kesimpulan a:hover {
+  color: #9cafaa;
+}
+
+/* kolom komentar */
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  margin-top: 40px;
+}
+
+#commentForm {
+  margin: 20px 150px 20px 150px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: #ccc;
+  border-radius: 8px;
+}
+
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+}
+
+#commentForm button {
+  padding: 10px;
+  width: 80px;
+  color: var(--primary);
+  background-color: var(--bg);
+  border: 1px solid #111;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#commentForm button:hover {
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+#response-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+
+/* isi komentar */
+#commentsList {
+  margin: 30px 250px;
+}
+
+.comment {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.comment:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.comment strong {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.comment p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.comment hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+#commentsList h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#commentsList p {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
 /* Media Querie */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -609,7 +797,7 @@ footer .Credit {
   }
 
   #hamburger-menu {
-  display: inline-block;
+    display: inline-block;
   }
 
   .Navbar .Navbar-nav {
@@ -673,7 +861,7 @@ footer .Credit {
   }
 
   .hero .content {
-    font-size: 55%
+    font-size: 55%;
     padding: 20px;
   }
 
@@ -709,7 +897,7 @@ footer .Credit {
   }
 
   .product-icons a {
-    font-size: 12px
+    font-size: 12px;
   }
 
   .product-desc {
@@ -717,11 +905,82 @@ footer .Credit {
   }
 
   .web-icons a {
-    font-size: 12px
+    font-size: 12px;
   }
 
   .web-desc {
     font-size: 13px;
+  }
+
+  .blog-header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .blog-descript p,
+  .kesimpulan p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 10px;
+  }
+
+  .blog-list p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 3px 10px 20px 10px;
+  }
+
+  .blog-list li {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .kesimpulan h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 10px 3px 10px;
+  }
+
+  /* komentar */
+  #commentForm {
+    margin: 10px;
+  }
+
+  h2 {
+    margin: 30px 0 15px 0;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: #ccc;
+    border-radius: 8px;
+  }
+
+  #response-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-size: 13px;
+  }
+
+  #commentsList {
+    margin: 10px;
   }
 
   footer .Links {
