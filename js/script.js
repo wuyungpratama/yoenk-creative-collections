@@ -40,6 +40,24 @@ document.addEventListener("click", function (e) {
   }
 });
 
+window.addEventListener("load", function () {
+  var modal = document.getElementById("myModal");
+  var closeBtn = document.getElementById("closeBtn");
+
+  modal.style.display = "flex";
+
+  // Klik tombol close
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // Klik di luar modal
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+});
 // // Modal Box
 // const itemDetailModal = document.querySelector("#item-detail-modal");
 // const itemDetailButtons = document.querySelectorAll(".item-detail-button");
