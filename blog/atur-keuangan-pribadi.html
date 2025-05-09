@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atur Keuangan Pribadi dengan Google Sheets</title>
+    <meta name="description"
+        content="Ingin lebih hemat dan teratur dalam keuangan? Pelajari cara mudah membuat personal finansial tracker dengan Google Sheets. Solusi simpel untuk ibu rumah tangga, UMKM, hingga freelancer.">
+    <meta name="keywords"
+        content="google, google sheets, google docs, google spreadsheet, finance, finansial, dashboard keuangan">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Feather Icon -->
+    <script src="http://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/fontawesome/css/all.css" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="/css/style.css/style.css" />
+
+    <!-- alpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- app -->
+    <script src="/src/app.js" async></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="Navbar" x-data>
+        <a href="/index.html" class="Navbar-logo">Yoenk<span>Creative</span>.</a>
+
+        <div class="Navbar-nav">
+            <a href="/index.html">Home</a>
+            <a href="/digiproduct.html">Digital Produk</a>
+            <a href="/printable.html">Printable</a>
+            <a href="/website.html">Website</a>
+            <a href="/index.html" id="hire">Hire Wuyung</a>
+            <a href="/blog.html">Blog</a>
+        </div>
+        <div class="Navbar-extra">
+            <!-- <a href="#" id="shopping-bag-button">
+                <i class="fas fa-cart-shopping fa-2x"></i>
+                <span class="quantity-notif" x-show="$store.cart.quantity" x-text="$store.cart.quantity"></span>
+            </a> -->
+            <a href="#" id="hamburger-menu"><i class="fas fa-bars fa-2x"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container">
+        <div class="blog-header">
+            <img src="/img/Blog/finance.jpg" alt="atur keuangan">
+            <h1>Solusi Atur Keuangan Pribadi pakai Google Sheets: <br> Cocok untuk Ibu Rumah Tangga, UMKM & Freelancer
+            </h1>
+        </div>
+
+        <div class="blog-descript">
+            <p>Pernah merasa uang selalu habis entah ke mana? Atau susah banget menabung meskipun penghasilan tetap?
+                Masalah seperti ini dialami banyak orang, mulai dari ibu rumah tangga, pelaku UMKM, hingga freelancer.
+                Kuncinya seringkali bukan soal besar kecilnya penghasilan, tapi seberapa baik kita mencatat dan
+                mengelola keuangan.
+
+                Di sinilah peran personal finansial tracker jadi sangat penting. Dan kabar baiknya, kamu bisa mulai dari
+                sesuatu yang gratis dan simpel: Google Sheets.</p>
+        </div>
+        <div class="blog-list">
+            <ol>
+                <li>Kenapa Personal Finansial Tracker Itu Penting?</li>
+                <p>GBanyak orang berpikir mencatat pengeluaran itu ribet dan membosankan. Tapi sebenarnya, justru ini
+                    adalah langkah kecil yang bisa membuat dampak besar pada kondisi keuangan kamu.Dengan mencatat
+                    keuangan secara rutin, kamu bisa: Mengetahui ke mana uangmu pergi, Mengurangi pengeluaran tidak
+                    penting, Menyusun anggaran belanja harian/bulanan, Memprioritaskan tabungan dan kebutuhan utama</p>
+
+                <li>Kenapa Google Sheets Cocok untuk Atur Keuangan Pribadi?</li>
+                <p>Berikut alasan kenapa Google Sheets sangat ideal digunakan: Gratis & mudah diakses lewat HP atau
+                    laptop, Data tersimpan aman di cloud, Bisa dikustom sesuai kebutuhan, tanpa ribet, Sudah mendukung
+                    rumus-rumus otomatis, grafik, dan bahkan bisa dijadikan aplikasi mini. Ini sangat cocok bagi: Ibu
+                    rumah tangga yang ingin mencatat belanja harian, Freelancer untuk menghitung penghasilan proyek,
+                    UMKM dalam mengelola arus kas dan pengeluaran operasional.</p>
+
+                <li>Fitur Dasar yang Wajib Ada di Tracker Keuangan</li>
+                <p>Untuk membuat tracker yang berguna, berikut beberapa kolom penting:
+                    Tanggal transaksi, Keterangan transaksi (contoh: belanja sayur, pembayaran listrik), Kategori
+                    (makan, transportasi, tagihan, dll.), Jumlah (plus untuk pemasukan, minus untuk pengeluaran), Total
+                    bulanan, Ringkasan tabungan atau sisa saldo <br>
+
+                    Opsional tapi bermanfaat:, Grafik pengeluaran bulanan, Notifikasi mingguan (kalau sudah disambungkan
+                    dengan script)
+                </p>
+
+                <li>Ingin Lebih Praktis? Gunakan WebApp Finansial Tracker dari Yoenk Creative</li>
+                <p>Kalau kamu ingin tracker yang sudah jadi dan langsung pakai, Yoenk Creative punya solusi WebApp
+                    Finansial Tracker siap pakai:Desain simpel, bisa dipakai langsung dari HP atau laptop, Sudah
+                    otomatis menjumlahkan pengeluaran dan sisa saldo, Bisa dikustom sesuai kebutuhan kamu, Aman dan
+                    berbasis Google Sheets. <br>
+                    Coba demo atau pesan sekarang di <a href="/website.html"
+                        style="text-decoration: none; color: navy;">yoenkcreative.biz.id</a> Finance Tracker.
+                </p>
+            </ol>
+        </div>
+
+        <div class="kesimpulan">
+            <h3>Kesimpulan</h3>
+            <p>Mengatur keuangan pribadi itu tidak harus ribet atau mahal. Mulai saja dari Google Sheets, lalu biasakan
+                mencatat dan mengevaluasi keuangan. Dengan langkah kecil ini, kamu bisa mengendalikan uang, bukan
+                dikendalikan uang.
+
+            </p>
+            <p>Dan kalau kamu ingin solusi yang lebih praktis, tinggal pakai saja WebApp Finansial Tracker dari Yoenk
+                Creative.</a></p>
+        </div>
+
+        <!-- kolom komentar -->
+        <h2>Bagikan Komentar Kamu</h2>
+        <form id="commentForm">
+            <input type="text" id="name" placeholder="Masukkan Nama Kamu" required />
+            <input type="email" id="email" placeholder="Masukkan Email Kamu" required />
+            <textarea id="message" placeholder="Silahkan tinggalkan komentar" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="response-message"></p>
+        <div id="commentsList">
+            <h3>Semua Komentar:</h3>
+            <div id="comments"></div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('commentForm');
+        const responseMessage = document.getElementById('response-message');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyqEbdgQQROHMVx63Xs-lv18gTWQG4t6luWgusrq_VI9Al9MZlXdfAaKSwcZwZQXCBE/exec', {
+                    method: 'POST',
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    responseMessage.textContent = 'Terima kasih! Komentarmu sudah masuk.';
+                    form.reset();
+                    loadComments(); // <-- Tambahkan ini untuk refresh komentar
+                } else {
+                    responseMessage.textContent = 'Kesalahan pengiriman formulir. Silakan coba lagi.';
+                }
+            } catch (error) {
+                responseMessage.textContent = 'Terjadi kesalahan. Silakan coba lagi.';
+            }
+        });
+
+        async function loadComments() {
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyQFn88L9rPs4ER6eRlolf2qGB2hiUkeTX3U2JyOantL3BsMH4SwWXJZsE3qUknvYS5dw/exec'); // GET ke URL Web App
+                const comments = await response.json();
+                const commentsList = document.getElementById('commentsList');
+                commentsList.innerHTML = '';
+
+                if (comments.length === 0) {
+                    commentsList.innerHTML = '<p>Belum ada komentar.</p>';
+                } else {
+                    comments.forEach(comment => {
+                        const commentElement = document.createElement('div');
+                        commentElement.className = 'comment';
+                        commentElement.innerHTML = `
+                    <p><strong>${comment.name}</strong> (${new Date(comment.date).toLocaleString()})</p>
+                    <p>${comment.message}</p>
+                    <hr/>
+                `;
+                        commentsList.appendChild(commentElement);
+                    });
+                }
+            } catch (error) {
+                console.error('Gagal memuat komentar:', error);
+                const commentsList = document.getElementById('commentsList');
+                commentsList.innerHTML = '<p>Gagal memuat komentar.</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadComments);
+    </script>
+</body>
+
+<!-- Footer Start -->
+<footer>
+    <div class="Sosials">
+        <a href="https://www.linkedin.com/in/wuyung-pratama-waryanto-a61b082a8/" target="_blank"><i
+                data-feather="linkedin"></i></a>
+        <a href="https://www.instagram.com/wuyungw" target="_blank"><i data-feather="instagram"></i></a>
+        <a href="https://wa.me/6281334227530" target="_blank"><i data-feather="message-square"></i></a>
+    </div>
+    <div class="Links">
+        <a href="/index.html">Home</a>
+        <a href="/digiproduct.html">Digital Produk</a>
+        <a href="/printable.html">Printable</a>
+        <a href="/website.html">Website</a>
+        <a href="/index.html">Hire Wuyung</a>
+        <a href="/blog.html">Blog</a>
+    </div>
+    <div class="Credit">
+        <p>Credit by YoenkCreative | &copy;2024</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Feather Icon -->
+<script>
+    feather.replace();
+</script>
+
+<!-- My Javascript -->
+<script src="/js/script.js"></script>
+
+</html>
